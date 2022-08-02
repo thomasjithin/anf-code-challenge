@@ -1,0 +1,10 @@
+<h3>Trending List Component based on ${properties.queryType}</h3>
+
+<div data-sly-use.model="com.anf.core.models.TrendingListModel">
+    <ul class="trendinglist__list" data-sly-list.page="${model.pageList}">
+        <li>        
+             <a href=`${page.pagePath}.html`>${page.pageName}</a>
+            <p>[${page.pagePath}]</p>
+        </li>
+    </ul>
+</div>

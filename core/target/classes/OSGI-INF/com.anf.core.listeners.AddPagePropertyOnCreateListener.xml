@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.anf.core.listeners.AddPagePropertyOnCreateListener" immediate="true" activate="activate">
+  <service>
+    <provide interface="javax.jcr.observation.EventListener"/>
+  </service>
+  <reference name="slingRepository" interface="org.apache.sling.jcr.api.SlingRepository" field="slingRepository"/>
+  <implementation class="com.anf.core.listeners.AddPagePropertyOnCreateListener"/>
+</scr:component>

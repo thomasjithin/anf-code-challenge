@@ -1,0 +1,42 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='anf.components.addUserForm'}"/>
+</sly>
+
+<form class="userForm">
+    <fieldset>
+        <legend>${properties.title}</legend>
+        <div class="error-msg" id="errorMessage">
+            This is an error message
+        </div>
+        <div class="success-msg" id="successMessage">
+            This is a success message
+        </div>
+        <ul>
+            <li>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" required />
+                <span class="feedback"></span>
+            </li>
+            <li>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" required />
+                <span class="feedback"></span>
+            </li>
+            <li>
+                <label for="age">Your age:</label>
+                <input type="text" id="age" required />
+                <span class="feedback"></span>
+            </li>
+            <li>
+                <label for="countries">Select country:</label>
+                <select id="countries" name="countries"></select>
+                <span class="feedback"></span>
+            </li>
+            <li>
+                <button type="submit" id="addUserFormBtn">Submit</button>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+

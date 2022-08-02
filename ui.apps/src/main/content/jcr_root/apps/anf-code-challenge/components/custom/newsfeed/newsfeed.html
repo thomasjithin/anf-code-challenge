@@ -1,0 +1,14 @@
+<div data-sly-use.model="com.anf.core.models.NewsFeedModel">
+    <div class="grid grid-template-columns-1" data-sly-list.newsfeed="${model.newsFeedList}">
+            <div class="card">
+                <img width="580" height="300" class="card-img" src=${newsfeed.image} />
+                <div class="card-content">
+                    <h2 class="card-header">${newsfeed.title}</h2>
+                    <p class="card-author"><span class="card-author-spec">Published by: </span> ${newsfeed.author}</p>
+                    <p class="card-text">${newsfeed.description}</p>
+                    <p class="card-text">${newsfeed.content}</p>
+                    <a href=${newsfeed.ctaUrl} class="card-btn" >Read More</a>
+                </div>
+            </div>
+    </div>
+</div>

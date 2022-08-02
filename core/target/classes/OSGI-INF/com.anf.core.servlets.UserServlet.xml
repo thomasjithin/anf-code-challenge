@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.anf.core.servlets.UserServlet">
+  <property name="sling.servlet.paths" type="String">/bin/saveUserDetails</property>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="contentService" interface="com.anf.core.services.ContentService" field="contentService"/>
+  <implementation class="com.anf.core.servlets.UserServlet"/>
+</scr:component>

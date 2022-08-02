@@ -1,0 +1,5 @@
+com/anf/core/models/HelloWorldModelTest.class
+com/anf/core/schedulers/SimpleScheduledTaskTest.class
+com/anf/core/listeners/SimpleResourceListenerTest.class
+com/anf/core/filters/LoggingFilterTest.class
+com/anf/core/servlets/SimpleServletTest.class
